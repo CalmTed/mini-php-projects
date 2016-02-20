@@ -1,0 +1,183 @@
+/* style for 4b.php */
+/* please do not use it without my permission (r2d2f9@gmail.com)*/
+body{ 
+	margin:0;
+	background: rgb(100,50,100);
+	font-family:Helvetyca,PT Sans;
+}
+*:focus{
+	outline:0;
+}
+#header{
+    height: 5%;
+    left: 5%;
+	position: fixed;
+    top: 10%;
+    width: 40%;
+    z-index: 1000;
+	
+}
+#headericon{
+    background-image: url(../img/ISlogo.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: inline-block;
+    height: 150%;
+    width: 10%;
+	
+}
+#headertext{
+    color: #eee;
+	display: inline-block;
+    font-size: 25px;
+    height: 50%;
+    position: relative;
+    top: -12px;
+}
+#back{
+	position: fixed;
+	top: -460px;
+	left: -1205px;
+}
+#b1{
+	background: rgb(200,50,100);
+	 animation-delay: 0s;
+}
+#b2{
+	background: rgb(180,50,100);
+	animation-delay: 0.1s;
+}
+#b3{
+	background: rgb(160,50,100);
+	animation-delay: 0.2s;
+}
+#b4{
+	background: rgb(140,50,100);
+	animation-delay: 0.3s;
+}
+#b5{
+	background: rgb(130,50,100);
+	animation-delay: 0.2s;
+}
+#b6{
+	background: rgb(120,50,100);
+	animation-delay: 0.1s;
+	z-index: 3000;
+	position: absolute;
+}
+#b7{
+	background: rgb(110,50,100);
+	animation-delay: 0s;
+	z-index: 3000;
+	margin-top: 205px;
+	position: absolute;
+}
+.bline{
+	width: 4000px;
+	height: 205px;
+	transform: rotateZ(-30deg);
+	transition-duration: 0.2s;
+	animation:startback 0.7s cubic-bezier(0.18, 0.89, 0.32, 1.28) 0s 1;
+	z-index:1000;
+}
+@keyframes startback {
+	0%	{height:205px}
+	30%	{height:100px}
+	100%{height:205px}
+}
+#result{
+	position:fixed;
+	width:100%;
+}
+#readyimage{
+    left: 26%;
+    top: 20%;
+    position: fixed;
+    max-width: 49%;
+    z-index: 2000;
+}
+#rlinklabel{
+	background: rgb(44, 40, 99);
+	color: #fff;
+	font-size: 18px;
+	text-align: center;
+	padding-top: 4px;
+	float: left;
+	height: 26px;
+	left: 26%;
+	position: fixed;
+	top: 12%;
+	width: 3%;
+}
+#rlinklabel:hover{
+	background: rgb(58, 50, 160);
+	cursor: pointer
+}
+#rlinkinput{
+	background: rgba(255, 255, 255, 0.5);
+	border: 0;
+	color: #222;
+	left: 29%;
+	font-size: 15px;
+	height: 30px;
+	padding: 0 2% 0 1%;
+	position: fixed;
+	top: 12%;
+	width: 28%;
+}
+#downloadbotton{
+	background: rgb(44, 40, 99);
+	color: #fff;
+	font-size: 18px;
+	float: right;
+	height: 26px;
+	left: 65%;
+	padding-top: 4px;
+	position: fixed;
+	text-align: center;
+	top: 12%;
+	width: 10%;
+}
+#downloadbotton:hover{
+	background: rgb(58, 50, 160);
+	cursor: pointer
+}
+#footer{
+    font-size: 15px;
+    color: #eee;
+	position: fixed;
+    height: 10%;
+    left: 45%;
+    top: 90%;
+    text-align: right;
+    width: 50%;
+}
+@media (max-width: 1024px){
+#rlinklabel{
+	font-size: 18px;
+	padding-top: 4px;
+	left: 0%;
+	top: 0%;
+	width: 5%;
+}
+#rlinkinput{
+	left: 5%;
+	font-size: 15px;
+	padding: 0 0 0 1%;
+	top: 0%;
+	width: 64%;
+}
+#downloadbotton{
+	font-size: 18px;
+	left: 70%;
+	padding-top: 4px;
+	top: 0%;
+	width: 30%;
+}
+#readyimage{
+    left: 10%;
+    top: 20%;
+    max-width: 80%;
+}
+
+}
